@@ -43,7 +43,9 @@
 
 .form-signin #inputEmail,
 .form-signin #inputPassword,
-.form-signin #inputconfirmPassword{
+.form-signin #inputconfirmPassword,
+.form-signin #organization
+{
   direction: ltr;
   height: 44px;
   font-size: 16px;
