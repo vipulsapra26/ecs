@@ -40,11 +40,10 @@
   border-radius: 50%;
 }
 
-
 .form-signin #inputEmail,
 .form-signin #inputPassword,
 .form-signin #inputconfirmPassword,
-.form-signin #organization{
+.form-signin #organization {
   direction: ltr;
   height: 44px;
   font-size: 16px;
@@ -70,8 +69,8 @@
 .form-signin .form-control:focus {
   border-color: #316d67;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
 }
 
 .btn.btn-signin {
@@ -84,20 +83,21 @@
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
-  color:#ffffff;
+  color: #ffffff;
   -o-transition: all 0.218s;
   -moz-transition: all 0.218s;
   -webkit-transition: all 0.218s;
   transition: all 0.218s;
 }
 
-a:hover, a:visited, a:link, a:active
-{
+a:hover, a:visited, a:link, a:active {
   text-decoration: none;
 }
+
 #remember {
   color: #ffffff;
 }
+
 .forgot-password {
   padding-top: 5px;
   color: #ffffff;

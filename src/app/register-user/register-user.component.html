@@ -1,0 +1,36 @@
+<div class="card card-container" #registerForm>
+  <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
+  <p id="profile-name" class="profile-name-card"></p>
+  <form class="form-signin">
+    <input type="text" [(ngModel)]=preRegisterModel.organisationName name="organizationName"
+           id="organization"
+           class="form-control"
+           placeholder="Organization"
+           disabled
+           required
+           autofocus>
+    <input type="email"
+           [(ngModel)]=preRegisterModel.email
+           #email id="inputEmail"
+           name="email"
+           disabled
+           class="form-control" placeholder="Email" required>
+    <input type="password"
+           #password
+           [(ngModel)]=registerModel.password
+           id="inputPassword"
+           class="form-control"
+           name="Password"
+           placeholder="Password"
+           required>
+    <input type="password" #confirmPassword id="inputconfirmPassword" class="form-control"
+           placeholder="Confirm Password" required>
+
+    <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" (click)="onRegister()">SIGN UP</button>
+  </form>
+  <a routerLink="/login" class="register">
+    Already have an account ? SIGN IN
+  </a>
+</div>
+
+
