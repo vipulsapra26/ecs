@@ -9,6 +9,7 @@ import {HttpModule} from "@angular/http";
 import {RegisterUserComponent} from "./register-user/register-user.component";
 import {FormsModule} from "@angular/forms";
 import {NetworkService} from "./services/network-services";
+import { EcsAboutComponent } from './ecs-about/ecs-about.component';
 
 const appRoutes: Routes = [
   {path: '', component: PreRegisterComponent},
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
     LoginComponent,
     PreRegisterComponent,
     RegisterUserComponent,
+    EcsAboutComponent,
   ],
   imports: [
     BrowserModule,

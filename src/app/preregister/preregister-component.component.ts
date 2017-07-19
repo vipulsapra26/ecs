@@ -1,4 +1,4 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnInit, ViewChild} from "@angular/core";
 import {NetworkService} from "../services/network-services";
 import {PreRegisterModel} from "../model/preregister-model";
 
@@ -9,11 +9,13 @@ import {PreRegisterModel} from "../model/preregister-model";
 })
 export class PreRegisterComponent implements OnInit {
   preRegisterModel: PreRegisterModel = new PreRegisterModel;
-
+  @ViewChild("form") form
+  @ViewChild("verify") verify
   constructor(private networkService: NetworkService) {
   }
 
   ngOnInit() {
+
   }
 
   onPreRegister() {
@@ -25,6 +27,10 @@ export class PreRegisterComponent implements OnInit {
 
   showVerificationPage() {
     console.log("Successful.. check email")
+    this.verify.nativeElement.removeAttribute("hidden");
+    this.form.nativeElement.setAttribute("hidden", true);
+
+
   }
 
 }

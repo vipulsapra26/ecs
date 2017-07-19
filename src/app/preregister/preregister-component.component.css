@@ -11,7 +11,25 @@
   user-select: none;
   cursor: default;
 }
-
+p{
+  margin-left: 80px;
+  color: white;
+  font-size: 200%;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+.foot{
+  height: 210px;
+}
+.fullpage{
+  height: 100vw;
+}
+.back{
+  background-image: url('desktop18.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
 /*
  * Card component
  */
@@ -20,7 +38,7 @@
   /* just in case there no content*/
   padding: 20px 25px 30px;
   margin: 0 auto 25px;
-  margin-top: 70px;
+  margin-top: 130px;
   /* shadows and rounded borders */
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;

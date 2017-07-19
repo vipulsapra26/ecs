@@ -2,6 +2,15 @@
 .card-container.card {
   max-width: 350px;
 }
+.back{
+  background-image: url('desktop18.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+.foot{
+  height: 160px;
+}
 
 .btn {
   font-weight: 700;
