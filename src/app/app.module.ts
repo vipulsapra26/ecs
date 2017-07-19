@@ -8,7 +8,6 @@ import {RouterModule, Routes} from "@angular/router";
 import {HttpModule} from "@angular/http";
 import {RegisterUserComponent} from "./register-user/register-user.component";
 import {FormsModule} from "@angular/forms";
-import {ErrorComponentComponent} from "./error-component/error-component.component";
 import {NetworkService} from "./services/network-services";
 
 const appRoutes: Routes = [
@@ -16,7 +15,7 @@ const appRoutes: Routes = [
   {path: 'register', component: PreRegisterComponent},
   {path: 'register/:token', component: RegisterUserComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'error', component: ErrorComponentComponent}
+
 ];
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ const appRoutes: Routes = [
     LoginComponent,
     PreRegisterComponent,
     RegisterUserComponent,
-    ErrorComponentComponent,
   ],
   imports: [
     BrowserModule,
